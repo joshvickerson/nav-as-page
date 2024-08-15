@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Eleventy">
+  {% include "partials/meta-info.html" %}
+  <link rel="stylesheet" media="print" href="/fonts/fonts.css" onload="this.media='all'" />
+  <link rel="stylesheet" href="/css/base.css"/>
+</head>
+<body>
+  <div class="site-wrap">
+    <header>
+      <a href="/nav/">Menu</a>
+    </header>
+    <main tabindex="-1" id="main-content">
+      {% block content %}{% endblock %}
+    </main>
+    <footer class="site-foot">
+      <p>An experiment by <a href="https://softclay.software/">Soft Clay Software</a></p>
+    </footer>
+  </div>  
+</body>
+</html>
